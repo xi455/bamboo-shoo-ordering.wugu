@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="0212.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+<body>
+    <div style=" position: relative; margin-top: 30px; width: 1000px;margin-left:auto; margin-right: auto; height: 650px; background-color: bisque;" >
+        <div style="border: 1px;  padding-left: 30px; padding-top: 10px;">
+            <h2>
+                紫雲農場 - 觀音山有機綠竹筍點餐
+            </h2>
+        </div>
+        <div style="margin-top: 20px; background-color: darkgrey; ">
+            <table style="background-color: darkgrey;">
+            <tr>
+                <td align="center" id="a"><a href="index.html" style="color:black; text-decoration:none;">首頁</a></td>
+                <td id="a" align="center"><a href="最新推出.html" style="color:black; text-decoration:none;">最新推出</a></td>
+                <td id="a" align="center" style="background-color: coral;"><a href="菜單.html" style="color:black; text-decoration:none;">菜單</a></td>
+               
+            </tr>
+            </table>
+        </div>
+        
+       
+
+
+        <form action="確認訂單.php" method="POST" id="form">
+            <table id="table" border="1">
+                <tr>
+                    <td id="td1"><img src="24865.jpg" id="img"></td>
+                    <td id="td2">涼拌竹筍</td>
+                    <td id="td3">50</td>
+                    <td id="td3"><input placeholder="數量" id="input" name="1" value="0"></td>
+                </tr>
+                <tr>
+                    <td id="td1"><img src="24867.jpg" id="img"></td>
+                    <td id="td2">竹筍湯</td>
+                    <td id="td3">50</td>
+                    <td id="td3"><input placeholder="數量" id="input" name="2" value="0"></td>
+                </tr>
+                <tr>
+                    <td id="td1"><img src="24873.jpg" style="width: 160px; height: 120px; margin-top: 8px; margin-left: 18px;"></td>
+                    <td id="td2">爆炒醬筍</td>
+                    <td id="td3">50</td>
+                    <td id="td3"><input placeholder="數量" id="input" name="3" value="0"></td>
+                </tr>
+                <tr>
+                    <td id="td1"><img src="S__1302532.jpg" style="width: 100px; height: 90px; margin-top: 8px; margin-left: 48px;"></td>
+                    <td id="td2">香菇竹筍雞湯</td>
+                    <td id="td3">50</td>
+                    <td id="td3"><input placeholder="數量" id="input" name="4" value="0"></td>
+                </tr>
+                <tr>
+                    <td id="td1"><img src="S__1400836.jpg" id="img"></td>
+                    <td id="td2">優格涼拌竹筍</td>
+                    <td id="td3">50</td>
+                    <td id="td3"><input placeholder="數量" id="input" name="5" value="0"></td>
+                </tr>
+                <tr>
+                    <td id="td1"><img src="messageImage_1614238652195.jpg" id="img"></td>
+                    <td id="td2">三杯小卷拌綠竹筍</td>
+                    <td id="td3">50</td>
+                    <td id="td3"><input placeholder="數量" id="input" name="6" value="0"></td>
+                </tr>
+                
+            </table>
+            <button type="button" name="送出訂購" id="button" >送出訂購</button>
+            
+        </form>
+
+
+
+<img src="紫雲農場竹筍訂購頁面.jpg"  style="margin-left: 10%; margin-top: 90px; width: 200px; height: 200px;">
+
+        <br>
+        <img src="d.png" style="width: 350px; height: 100px; margin-top: 20px; margin-left: 2%; margin-right: 50px;">
+        
+        
+       
+        
+       
+        
+       
+        
+
+    </div>
+
+    <script>
+        $('#button').click(function(){
+
+            var a = parseInt($('input[name="1"]').val())
+            var b = parseInt($('input[name="2"]').val())
+            var c = parseInt($('input[name="3"]').val())
+            var d = parseInt($('input[name="4"]').val())
+            var e = parseInt($('input[name="5"]').val())
+            var f = parseInt($('input[name="6"]').val())
+
+            var sum = (a+b+c+d+e+f)*50;
+
+            var html = "<h1>餐點總共："+ " " + sum + " "+ " " +"元整</h1>";
+            html = html + "<img src=3.png> ";
+
+            $("#button").remove();
+            $("#table").html(html);
+        })
+
+
+        
+    </script>
+</body>
+</html>
