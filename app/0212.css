@@ -1,0 +1,104 @@
+#a{
+     width: 333px;
+    height: 24px;
+   
+}
+
+#form{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 1%;
+    margin-right: 10%;
+    background-color: white;
+    overflow:hidden;
+    overflow: auto;
+   
+}
+
+#table{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+border: wheat;
+}
+
+#td1{
+    width:200px;
+    height: 100px;
+
+}
+
+#td2{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+#td3{
+    text-align: center;
+    width: 90px;
+    height: 100px;
+}
+
+#td4{
+
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:130px;
+    margin-bottom: auto;
+    width: 180px;
+    text-align: center;
+}
+
+#img{
+    width: 180px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+#input{
+    width: 50px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    
+}
+#img2{
+    width: 250px;
+    height: 150px;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+#input2{
+    width: 300px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+#form2{
+    width: 600px;
+    height: 330px;
+    position: absolute;
+    
+    margin-top: 1%;
+    margin-right: 10%;
+    background-color: white;
+    overflow:hidden;
+    overflow: auto;
+    background-color: aqua;
+}
+#table2{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
