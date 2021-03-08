@@ -18,16 +18,15 @@
 }
 
 #table{
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-border: wheat;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
 }
 
 #td1{
     width:200px;
     height: 100px;
-
 }
 
 #td2{
